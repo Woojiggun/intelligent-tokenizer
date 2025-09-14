@@ -45,6 +45,7 @@ Input Text → UTF-8 Bytes → 256-byte Chunks → Encoder (5 layers) → Decode
 
 - 📄 **Paper**: [Read on Zenodo](https://zenodo.org/records/17116281?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImIyNWZiYTQyLWNiNGEtNDBmNi1iNTczLWVkMDJlNDI1YTQ1OSIsImRhdGEiOnt9LCJyYW5kb20iOiI0OWJkZWMzMjJjZTc3OTIwMTk4NTJlNTY1YmNjOGU1ZiJ9.Z_hXEp160tWBD5Qe2laQv1vhS4Js2a0R5BMWYs2PTG5vJMrc8l-BmPAIMya9O_HiN85jYZp-WOMOHg_DTHrg2A) | [PDF](Intelligent%20Tokenizer.pdf)
 - 🤗 **Model**: [Hugging Face - ggunio/intelligent-tokenizer-v6](https://huggingface.co/ggunio/intelligent-tokenizer-v6)
+- 🎮 **Live Demo**: [Try on Hugging Face Spaces](https://huggingface.co/spaces/ggunio/intelligent-tokenizer-v6-demo)
 - 📝 **Documentation**: [English](paper_english.md) | [한국어](paper_korean.md)
 
 ## 💻 Installation
@@ -62,15 +63,22 @@ pip install tqdm
 
 ## 🚀 Quick Start
 
+### Option 1: Try Live Demo
+🎮 **[Try it now on Hugging Face Spaces](https://huggingface.co/spaces/ggunio/intelligent-tokenizer-v6-demo)** - No installation required!
+
+### Option 2: Use in Code
 ```python
+from huggingface_hub import hf_hub_download
 from src.core.byte_tokenizer_v6 import ByteTokenizerV6
-from core.unified_model import IntelligentTokenizerModel
+from core.boundary_aware_model import BoundaryAwareTokenizerModel
 
-# Initialize tokenizer
+# Download model from Hugging Face
+model_path = hf_hub_download(repo_id="ggunio/intelligent-tokenizer-v6",
+                             filename="pytorch_model.bin")
+
+# Initialize tokenizer and model
 tokenizer = ByteTokenizerV6(max_seq_len=256)
-
-# Load model
-model = IntelligentTokenizerModel.from_pretrained('ggunio/intelligent-tokenizer-v6')
+model = BoundaryAwareTokenizerModel.from_pretrained(model_path)
 
 # Process text
 text = "Hello, World! 안녕하세요!"
