@@ -8,6 +8,12 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](LICENSE)
 
 ---
+## 🔗 Resources
+
+- 📄 **Paper**: [Read on Zenodo](https://zenodo.org/records/17116281?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImIyNWZiYTQyLWNiNGEtNDBmNi1iNTczLWVkMDJlNDI1YTQ1OSIsImRhdGEiOnt9LCJyYW5kb20iOiI0OWJkZWMzMjJjZTc3OTIwMTk4NTJlNTY1YmNjOGU1ZiJ9.Z_hXEp160tWBD5Qe2laQv1vhS4Js2a0R5BMWYs2PTG5vJMrc8l-BmPAIMya9O_HiN85jYZp-WOMOHg_DTHrg2A) | [PDF](Intelligent%20Tokenizer.pdf)
+- 🤗 **Model**: [Hugging Face - ggunio/intelligent-tokenizer-v6](https://huggingface.co/ggunio/intelligent-tokenizer-v6)
+- 🎮 **Live Demo**: [Try on Hugging Face Spaces](https://huggingface.co/spaces/ggunio/intelligent-tokenizer-v6-demo)
+- 📝 **Documentation**: [English](paper_english.md) | [한국어](paper_korean.md)
 
 ## 📢 Major Breakthrough: 97.71% Reconstruction Without Vocabulary!
 
