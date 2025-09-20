@@ -1,4 +1,8 @@
-gradio
-torch
-transformers
-numpy
+torch==2.1.0
+numpy==1.24.0
+gradio==4.0.0
+huggingface-hub
+tqdm
+# For 4-bit quantization (optional)
+# bitsandbytes==0.41.0
+# accelerate==0.24.0
