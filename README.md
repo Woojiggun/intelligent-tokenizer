@@ -205,10 +205,10 @@ We're a solo developer with limited resources. To scale from 6 to 204 languages:
 ## 📝 Citation
 
 ```bibtex
-@software{b2nl2024,
+@software{b2nl2025,
   title = {B2NL: Byte-to-Natural-Language Universal Tokenizer},
   author = {Gun, Woojin},
-  year = {2024},
+  year = {2025},
   version = {6.1.1},
   note = {97.71% reconstruction, 100% byte-exact for 6 languages},
   url = {https://github.com/Woojiggun/intelligent-tokenizer}
